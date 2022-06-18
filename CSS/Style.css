@@ -85,6 +85,15 @@ button {
   padding: 0 2rem;
   overflow: hidden;
 }
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+.page-container article {
+  grid-row: 1 / span 3;
+}
 .text-primary {
   color: #06b995;
 }
@@ -183,6 +192,8 @@ button {
   text-decoration: wavy 2px;
   text-decoration-color: #06b995;
   text-decoration-line: underline;
+  text-underline-offset: 4px;
+  /* border-bottom: 1px solid #06b995; */
 }
 #showcase {
   color: #fff;
@@ -252,4 +263,19 @@ button {
 }
 .list li a:hover {
   color: var(--primary-color) !important;
+}
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+#article .meta .category {
+  margin-top: 0.5rem;
+}
+#categories .list li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
